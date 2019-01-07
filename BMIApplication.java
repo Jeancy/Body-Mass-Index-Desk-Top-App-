@@ -1,10 +1,12 @@
-/*
+
  * Given the heigth and the weight of a person, compute his body mass
  * index BMI and tell the person if he is underweight, overweight, obese
- * or has a normal weight (GUI APP with swing)
+ * or has a normal weight
  *
  */
 package bodymassindexapp;
+
+import java.awt.Toolkit;
 
 /**
  *
@@ -17,7 +19,8 @@ public class BMIApplication extends javax.swing.JFrame {
      */
     public BMIApplication() {
         initComponents();
-        //new BMIApplication().setTitle("BODY MASS INDEX APPLICATION");
+        setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("BMI.png")));
+        
     }
 
     /**
@@ -41,41 +44,47 @@ public class BMIApplication extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("BODY MASS INDEX APPLICATION BUILT BY JEANCY TSHIBEMBA");
         setBounds(new java.awt.Rectangle(0, 0, 0, 0));
+        setIconImages(null);
+        setResizable(false);
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 0));
         jLabel1.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("BELOW IS YOUR BODY MASS INDEX");
         jLabel1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 255), 3, true));
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 0));
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("WEIGHT");
         jLabel2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 255), 3, true));
 
         txtWeight.setBackground(new java.awt.Color(255, 255, 0));
         txtWeight.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         txtWeight.setForeground(new java.awt.Color(51, 0, 255));
-        txtWeight.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        txtWeight.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtWeight.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 255), 3, true));
         txtWeight.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         txtBodyMass.setBackground(new java.awt.Color(255, 255, 0));
         txtBodyMass.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         txtBodyMass.setForeground(new java.awt.Color(0, 0, 255));
+        txtBodyMass.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtBodyMass.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 255), 3, true));
 
         jLabel3.setBackground(new java.awt.Color(255, 255, 0));
         jLabel3.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("HEIGHT");
         jLabel3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 255), 3, true));
 
         txtHeight.setBackground(new java.awt.Color(255, 255, 0));
         txtHeight.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         txtHeight.setForeground(new java.awt.Color(0, 0, 255));
-        txtHeight.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        txtHeight.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtHeight.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 255), 3, true));
         txtHeight.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
@@ -219,4 +228,7 @@ public class BMIApplication extends javax.swing.JFrame {
     private javax.swing.JTextField txtHeight;
     private javax.swing.JTextField txtWeight;
     // End of variables declaration                   
+
+   
 }
+
