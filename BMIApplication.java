@@ -17,6 +17,10 @@ public class BMIApplication extends javax.swing.JFrame {
     /**
      * Creates new form BMIApplication
      */
+	
+    // Body Mass Index (BMI) criteria: the BMI equals to the weigth divide by squared height.
+    // If the BMI is less than 18.5, you are underweight; if it is greater or equal to 18.5 and less than 25, your weight is normal; if the BMI is greater or equal to 25
+    // and less than 30 you are overweight; if your BMI is greater than 30, you are obese.	
     public BMIApplication() {
         initComponents();
         setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("BMI.png")));
